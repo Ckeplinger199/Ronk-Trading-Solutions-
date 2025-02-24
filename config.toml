@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#FFA500"  # Bloomberg Orange
+backgroundColor = "#000000"  # Pure Black
+secondaryBackgroundColor = "#1A1A1A"  # Dark Gray
+textColor = "#00FF00"  # Terminal Green
+font = "monospace"
