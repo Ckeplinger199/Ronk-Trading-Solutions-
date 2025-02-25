@@ -10,6 +10,8 @@ import requests
 import time
 import os
 
+st.set_page_config(page_title="Options Evaluation Program", layout="wide")
+
 # Configure logging
 log_file = 'options_analysis.log'
 if os.path.exists(log_file):
@@ -60,9 +62,6 @@ def get_secret(key, default=None):
 TRADIER_TOKEN = get_secret("tradier_token")
 ALPHA_VANTAGE_API_KEY = get_secret("alpha_vantage_api_key")
 NEWS_API_KEY = get_secret("news_api_key")
-
-# Set page config before any other Streamlit commands
-st.set_page_config(page_title="Options Evaluation Program", layout="wide")
 
 # Validate API keys
 if not TRADIER_TOKEN:
